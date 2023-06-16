@@ -4,6 +4,7 @@ import "leaflet/dist/leaflet.css";
 import "./myMap.css";
 
 export function MyMap({ clickHandler }) {
+  // Map styling
   const countryStyle = {
     weight: 0.6,
     color: "black",
@@ -18,7 +19,6 @@ export function MyMap({ clickHandler }) {
       mouseover: (event) => {
         //console.log(event.target.feature.properties.ADMIN);
         event.target.setStyle({
-          //color: "rgb(51, 136, 255)",
           fillColor: "yellow",
           color: "black",
           fillOpacity: 0.5,

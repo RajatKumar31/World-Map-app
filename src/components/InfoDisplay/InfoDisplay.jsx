@@ -1,14 +1,12 @@
 import "./infoDisplay.css";
 
 export function InfoDisplay({ country }) {
-  console.log(country);
   return (
     <div className="infoContainer">
       <h1 className="countryHeading">{country.name.common}</h1>
       <div className="imageContainer">
         <img src={country.flags.png} alt="Country Flag" />
       </div>
-
       <p>
         <b>Capital :</b> {country.capital}
       </p>

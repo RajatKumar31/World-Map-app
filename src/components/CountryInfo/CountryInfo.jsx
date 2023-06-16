@@ -3,16 +3,17 @@ import { useState, useEffect } from "react";
 import { InfoDisplay } from "../InfoDisplay/InfoDisplay";
 import { Alert, AlertTitle } from "@mui/material";
 
-export const CountryInfo = ({ country }) => {
+export const CountryInfo = ({ countryCode }) => {
+
+  // it stores country data
   const [countryData, setCountryData] = useState([]);
   const [error, setError] = useState(false);
 
-  let countryName = country;
-
+  // Function to fetch API
   useEffect(() => {
-    async function getCountryByName(countryName) {
+    async function getCountryByName(countryCode) {
       try {
-        const res = await fetch(`${apiURL}/alpha/${countryName}`);
+        const res = await fetch(`${apiURL}/alpha/${countryCode}`);
         if (!res.ok) throw new Error("Could not found!");
         const data = await res.json();
         setCountryData(data);
@@ -20,8 +21,8 @@ export const CountryInfo = ({ country }) => {
         setError(true);
       }
     }
-    getCountryByName(countryName);
-  }, [countryName]);
+    getCountryByName(countryCode);
+  }, [countryCode]);
 
   return (
     <>
@@ -42,5 +43,3 @@ export const CountryInfo = ({ country }) => {
     </>
   );
 };
-
-export default CountryInfo;
