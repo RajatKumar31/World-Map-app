@@ -11,6 +11,7 @@ export function MyMap({ clickHandler }) {
     fillColor: "pink",
   };
 
+  // function that gets called on each feature before adding it to a GeoJSON layer
   const onEachCountry = (country, layer) => {
     const countryName = country.properties.ADMIN;
     const countryCode = country.properties.ISO_A3;

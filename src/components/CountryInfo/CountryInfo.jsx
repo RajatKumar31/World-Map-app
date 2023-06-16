@@ -7,6 +7,7 @@ export const CountryInfo = ({ countryCode }) => {
 
   // it stores country data
   const [countryData, setCountryData] = useState([]);
+  
   const [error, setError] = useState(false);
 
   // Function to fetch API
