@@ -1,0 +1,35 @@
+.infoContainer {
+  margin-right: 45px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.countryHeading {
+  text-align: center;
+  margin: 0;
+}
+
+.loadingItem {
+  margin-right: 50px;
+}
+.imageContainer {
+  width: 300px !important;
+  height: 250px !important;
+}
+.imageContainer img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+p {
+  background-color: #162938;
+  background-color: rgba(229, 216, 216, 0.89);
+  padding: 10px;
+  color: black;
+  margin: 2px 0;
+}
+
+p:hover {
+  background-color: rgba(75, 95, 110, 0.8);
+}

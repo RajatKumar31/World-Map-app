@@ -1,0 +1,16 @@
+.title{
+    width: 100px;
+    background-color: #162938;
+    text-align: center;
+    color: white;
+    margin: 5px auto;
+}
+
+.leaflet-container{
+    background-color: #aad3df;
+}
+
+.request-popup .leaflet-popup-content-wrapper {
+    border-radius: 0px;
+    background-color: red;
+  }
